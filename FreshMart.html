@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshMart Grocery Store</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background: rgb(247, 255, 249);
+        }
+
+        
+        .navbar{
+            background: linear-gradient(90deg, rgb(0, 179, 107), rgb(0, 153, 85));
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h1{
+            letter-spacing: 1px;
+        }
+
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: .3s;
+        }
+
+        .navbar a:hover{
+            color: rgb(248, 243, 97);
+        }
+
+        
+        .banner{
+            height: 350px;
+            background: url("https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?auto=compress&cs=tinysrgb&w=1200")
+            center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 8px rgb(0, 0, 0);
+        }
+
+        .banner h2{
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .banner p{
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        
+        #products{
+            padding: 50px;
+        }
+
+        #products h2{
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: rgb(0, 136, 74);
+        }
+
+        .product-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .product-box{
+            width: 230px;
+            padding: 15px;
+            background: rgb(255, 255, 255);
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: .3s;
+        }
+
+        .product-box:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 5px 20px rgba(0,128,0,0.2);
+        }
+
+        .product-box img{
+            width: 200px;
+            height: 165px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .product-box h3{
+            margin: 10px 0 5px 0;
+        }
+
+        .product-box button{
+            background: rgb(0, 166, 89);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .product-box button:hover{
+            background: rgb(0, 109, 59);
+        }
+
+        
+        #about{
+            background: rgb(255, 243, 206);
+            padding: 45px;
+            text-align: center;
+        }
+
+        #about h2{
+            margin-bottom: 10px;
+        }
+
+
+        #contact{
+            background: rgb(212, 255, 228);
+            padding: 45px;
+            text-align: center;
+        }
+
+        footer{
+            background: rgb(0, 119, 68);
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <h1>FreshMart</h1>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#products">Groceries</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+
+    <section id="home" class="banner">
+        <h2>FreshMart Grocery Store </h2>
+        <p>Fresh • Organic • Healthy</p>
+    </section>
+
+    
+    <section id="products">
+        <h2> Fresh Grocery Items</h2>
+
+        <div class="product-container">
+
+            <div class="product-box">
+                <img src="https://www.shutterstock.com/image-photo/red-apple-fruit-isolated-on-260nw-2292891019.jpg" alt="">
+                <h3>Fresh Apples</h3>
+                <p>₹180 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://insanelygoodrecipes.com/wp-content/uploads/2023/01/Fresh-Organic-Tangerine-Oranges-with-Leaves.jpg" alt="">
+                <h3>Oranges</h3>
+                <p>₹60 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://dww3ueizok6z0.cloudfront.net/food/banner/770-0e2538d59e1d880a2d24e2db8152ac34205a914b" alt="">
+                <h3>Mango</h3>
+                <p>₹50 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://draxe.com/wp-content/uploads/2019/12/DrAxeDragonFruitThumbnail.jpg" alt="">
+                <h3>Dragon</h3>
+                <p>₹300 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+             <div class="product-box">
+                <img src="https://png.pngtree.com/png-vector/20241225/ourmid/pngtree-delicious-black-grapes-png-image_14877346.png" alt="">
+                <h3>Grapes</h3>
+                <p>₹60 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://img.freepik.com/free-vector/natural-milk-products-template_1284-20877.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+                <h3>Milk</h3>
+                <p>₹50 / 1 litre</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+                <img src="https://goldenkaju.in/cdn/shop/articles/w180-cashew-nut-500x500.webp?v=1726039535" alt="">
+                <h3>Cashew</h3>
+                <p>₹1200 / 1kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>FreshMart brings fresh, organic groceries directly to your home at affordable prices.</p>
+        <p>We focus on healthy, organic fruits, vegetables, and daily essentials.</p>
+        <p>Our mission is to make eating fresh easy, convenient, and trustworthy for every home.</p>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email:aniket@freshmart.com</p>
+        <p>Phone: +91 9570238976</p>
+    </section>
+
+    <footer>
+         FreshMart 
+    </footer>
+
+</body>
+</html>
